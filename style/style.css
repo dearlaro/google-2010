@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, input, button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+:root{
+    --body-bg: rgb(255, 255, 255);
+    --body-color: rgb(53, 53, 53);
+}
+.dark-mode:root{
+    --body-bg:black;
+    --body-color: aliceblue;
+}
+
+a:link{
+    color:blue
+}
+a:hover{
+    color:rgb(110, 105, 114)
+}
+
+.menu{
+    height: 50px;
+    width: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color:blue;
+    border: 1px solid rgb(37, 37, 215);
+}
+
+.menu-section{
+    display: flex;
+    align-items: center;
+}
+
+.menu-section.left .menu-icon{
+    padding: 12px 16px;
+    width: 55px;
+}
+
+.menu-link{
+    font-size: 12px;
+    font-weight: 600;
+    color:rgb(26, 26, 171);
+    padding: 10px 8px;
+}
+
+.menu-section.right{
+    margin-right: 4px;
+}
+
+.menu-section.right .menu-icon{
+    padding: 12px;
+    width: 48px;
+}
+
+
+.content{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 200px 8px 0;
+    align-items: center;
+}
+
+.content-logo{
+    width: 200%;
+    max-width: 300px;
+
+}
+
+.content-search{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 730px;
+    padding: 7px 10px 7px 10px;
+    font-size: 18px;
+    color: rgb(57, 57, 57);
+    background-color: transparent;
+    border: 1px solid rgb(199, 195, 195);
+}
+
+
+.content-offer{
+    font-size: 14px;
+    padding: 6px 12px;
+}
+.botao {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.content-offer a{
+    text-decoration: none;
+    color: rgb(85, 0, 255);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color:rgb(173, 173, 173);
+    padding: 10px;
+}
+
+.content-personalize{
+    padding:5px;
+    background:rgba(0,0,0,0.2);
+    position:fixed;
+    bottom: 90px;
+    right: 20px;
+}
+
+.customize-icon{
+    margin-right: 170px;
+    margin-top: -40px;
+    bottom: 10px;
+}
+
+
+
